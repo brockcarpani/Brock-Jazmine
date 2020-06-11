@@ -49,6 +49,10 @@ p {
 	font-size: 50px;
 }
 
+.flex {
+	display: flex;
+}
+
 video {
 	width: -webkit-fill-available;
 }
