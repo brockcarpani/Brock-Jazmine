@@ -57,6 +57,12 @@ video {
 	width: -webkit-fill-available;
 }
 
+.date {
+	color: white;
+	font-size: 65px;
+	text-align: center;
+}
+
 /*------------------*/
 /*  SKEW CLOCKWISE  */
 /*------------------*/
