@@ -28,7 +28,10 @@
 		<div class="middle">Pictures</div>
 		
 		<hr>
-		
+
+		<pictues></pictues>
+		<!--#include virtual="pictures.html" -->
+		<!--
 		<div class="slideshow">
 		  <img class="slide" src="photos/1.JPG">
 		  <img class="slide" src="photos/2.JPG">
@@ -56,7 +59,7 @@
 		  <img class="slide" src="photos/20.JPG">
 		  <img class="slide" src="photos/25.JPG">
 		</div>
-		
+		-->
 	</div>
 	
 	<div class="skew-c"></div>
@@ -95,7 +98,15 @@
 	</div>
 	</div>
 	
+	<!--
 	<script>
+		fetch('https://photoslibrary.googleapis.com/v1/albums').then(
+			response => {
+				return response.json();
+			}).then(albums => {
+				console.log(albums);
+			});
+		//
 		var myIndex = 0;
 		carousel();
 
@@ -111,7 +122,16 @@
 		  setTimeout(carousel, 2000); // Change image every 2 seconds
 		}
 	</script>
-	
+	-->
+	<script>
+		fetch("./pictures.html")
+		  .then(response => {
+		    return response.text()
+		  })
+		  .then(data => {
+		    document.querySelector("pictures").innerHTML = data;
+		  });
+	</script>
 	
 </body>
 </html>
