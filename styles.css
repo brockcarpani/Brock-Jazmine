@@ -63,6 +63,11 @@ video {
 	text-align: center;
 }
 
+.playlist {
+	display: flex;
+	justify-content: center;
+}
+
 /*------------------*/
 /*  SKEW CLOCKWISE  */
 /*------------------*/
